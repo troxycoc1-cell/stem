@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -10,114 +10,113 @@
     integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
     crossorigin="anonymous"
   />
+  <link rel="stylesheet" href="English.css">
   <script
     defer
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
     crossorigin="anonymous"
   ></script>
-  <link rel="stylesheet" href="English.css" />
 </head>
 <body>
-  <div class="container-fluid">
-    <div class="d-flex" style="min-height: 350px;">
 
- 
-      <div class="d-none d-lg-block border" style="width: 120px;">
-        <iframe
-          width="120"
-          height="400"
-          src="https://www.youtube.com/embed/SXHMnicI6Pg"
-          title="Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster)"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-          style="display: block;"
-        ></iframe>
-      </div>
+<div class="content-wrapper container-fluid">
 
-     
-      <div class="flex-grow-1 d-flex gap-3 p-3" style="min-width: 0;">
-        <div class="border p-3" style="flex: 1 1 auto; min-width: 0;">
-          <div class="ratio ratio-16x9">
-            <img
-              src="bus map.png"
-              alt="Bus Map Fairfield"
-              class="w-100 h-100"
-              style="object-fit: cover;"
-            />
-          </div>
-        </div>
-
-       
-        <div class="border p-3" style="flex: 1 1 auto; min-width: 0;">
-          <label for="busStop1" class="form-label">Trạm xe buýt 1:</label>
-          <select id="busStop1" class="form-select mb-3" aria-label="Select Bus Stop 1">
-            <option value="">Chọn trạm xe buýt 1</option>
-         <option id="O1" value="Fairfield Forum">Fairfield Forum</option>
-            <option id="O2" value="FHS">FHS</option>
-            <option id="O3" value="PBCF">PBCF</option>
-          </select>
-
-          <label for="busStop2" class="form-label">Trạm xe buýt 2:</label>
-          <select id="busStop2" class="form-select mb-3" aria-label="Select Bus Stop 2">
-            <option value="">Chọn trạm xe buýt 2</option>
-           <option id="O11" value="Fairfield Forum">Fairfield Forum</option>
-            <option id="O22" value="FHS">FHS</option>
-            <option id="O33" value="PBCF">PBCF</option>
-          </select>
-
-          <div id="busTimeDisplay" class="text-center mt-4 fs-5 fw-bold">
-            <p id="finaltime"></p>
-          </div>
-        </div>
-      </div>
-
-   
-      <div class="d-none d-lg-block border" style="width: 120px;">
-           <iframe
-          width="120"
-          height="400"
-          src="https://www.youtube.com/embed/0Ul8D1PSUJk"
-          title="Aura Farming"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-          style="display: block;"
-          loop=1
-          autoplay=1
-        ></iframe>
-    </div>
-
-
-    </div>
-
-  
-    <div class="d-flex justify-content-center gap-3 p-3 border-top mt-3">
-      <button id="goingback" class="btn btn-primary">Trang chủ</button>
-      <button class="btn btn-secondary">Hỗ trợ</button>
-      <button class="btn btn-secondary">Dừng</button>
-    </div>
+  <div class="alert alert-info mt-3">
+    <h5>Cách Sử Dụng</h5>
+    <p>
+      Chọn điểm dừng xe buýt khởi hành và điểm đến từ các menu thả xuống.
+      Bản đồ bên trái hiển thị lộ trình, và các điểm dừng bạn chọn sẽ hiển thị thời gian dự kiến của xe buýt.
+      Sử dụng nút Hỗ trợ nếu bạn cần giúp đỡ, và nút Dừng để yêu cầu tài xế dừng xe.
+    </p>
   </div>
 
+  <div class="d-flex flex-wrap" style="min-height: 350px;">
 
-<div
-  id="councilNewsBar"
-  style="
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #f8f9fa;
-    border-top: 2px solid #007bff;
-    padding: 10px 20px;
-    z-index: 1050;
-    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
-  "
->
-  <h5 class="mb-2">Tin tức hội đồng</h5>
+    <div class="d-none d-lg-block border" style="width: 120px;">
+      <iframe
+        width="120"
+        height="400"
+        src="https://www.youtube.com/embed/SXHMnicI6Pg?autoplay=1&loop=1&playlist=SXHMnicI6Pg"
+        title="Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster)"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <div class="flex-grow-1 d-flex gap-3 p-3" style="min-width: 0;">
+
+      <div class="border p-3" style="flex: 1 1 auto; min-width: 0;">
+        <div class="ratio ratio-16x9">
+          <img
+            src="bus map.png"
+            alt="Bản đồ xe buýt Fairfield hiển thị tuyến địa phương và kết nối"
+            class="w-100 h-100"
+            style="object-fit: cover;"
+          />
+        </div>
+      </div>
+
+      <div class="border p-3" style="flex: 1 1 auto; min-width: 0;">
+        <label for="busStop1" class="form-label">Điểm Dừng Xe Buýt 1 (Khởi Hành):</label>
+        <select id="busStop1" class="form-select mb-3" aria-label="Chọn điểm dừng khởi hành">
+          <option value="">Chọn Điểm Dừng 1</option>
+          <option value="Fairfield Forum">Fairfield Forum</option>
+          <option value="FHS">FHS</option>
+          <option value="PBCF">PBCF</option>
+        </select>
+
+        <label for="busStop2" class="form-label">Điểm Dừng Xe Buýt 2 (Điểm Đến):</label>
+        <select id="busStop2" class="form-select mb-3" aria-label="Chọn điểm dừng điểm đến">
+          <option value="">Chọn Điểm Dừng 2</option>
+          <option value="Fairfield Forum">Fairfield Forum</option>
+          <option value="FHS">FHS</option>
+          <option value="PBCF">PBCF</option>
+        </select>
+
+        <div id="busTimeDisplay" class="text-center mt-4 fs-5 fw-bold">
+          <p id="finaltime"></p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="mt-4">
+      <h6>Thông Tin Tuyến</h6>
+      <table class="table table-bordered text-center">
+        <thead class="table-light">
+          <tr>
+            <th>Số Xe Buýt</th>
+            <th>Thời Gian Ước Tính</th>
+            <th>Tần Suất</th>
+          </tr>
+        </thead>
+        <tbody id="routeTableBody">
+        </tbody>
+      </table>
+      <a href="feesVI.html" class="btn btn-info">xem phí và sự cố mất điện</a>
+    </div>
+
+    <div class="d-none d-lg-block border" style="width: 120px;">
+      <iframe
+        width="120"
+        height="400"
+        src="https://www.youtube.com/embed/0Ul8D1PSUJk?1&loop=1&playlist=0Ul8D1PSUJk"
+        title="Aura Farming"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+  </div>
+</div>
+
+<div id="councilNewsBar" class="fixed-bottom">
+  <h5 class="mb-2">Tin Hội Đồng</h5>
   <div style="max-width: 400px;">
     <iframe
       width="100%"
@@ -125,12 +124,17 @@
       src="https://www.youtube.com/embed/63gd872jBus"
       title="Council News Video"
       frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       allowfullscreen
     ></iframe>
+    <button id="goingback" class="btn btn-primary">Trang Chủ</button>
+    <button class="btn btn-secondary">Hỗ Trợ</button>
+    <button class="btn btn-secondary">Dừng</button>
   </div>
 </div>
 
-  <script src="English.js"></script>
+<script src="True.js">
+
+</script>
 </body>
 </html>

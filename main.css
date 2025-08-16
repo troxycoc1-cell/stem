@@ -84,3 +84,7 @@ cursor: crosshair;
 .hidden {
     display: none;
 }
+
+.background {
+  background-color: moccasin;
+}

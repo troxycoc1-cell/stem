@@ -1,0 +1,81 @@
+body {
+      background: linear-gradient(135deg, #f6d365, #fda085);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .content-wrapper {
+      flex: 1 0 auto;
+      padding-bottom: 100px; /* space for bottom buttons */
+    }
+    .fixed-bottom-buttons {
+      position: fixed;
+      bottom: 60px; /* above news bar */
+      left: 0;
+      width: 100%;
+      background-color: white;
+      border-top: 2px solid #007bff;
+      padding: 10px;
+      z-index: 1100;
+    }
+    #councilNewsBar {
+      background-color: #f8f9fa;
+      border-top: 2px solid #007bff;
+      padding: 10px 20px;
+      z-index: 1050;
+      box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    }
+    
+    /* English Modernized CSS with Animations (without alert styling) */
+
+body {
+background: linear-gradient(135deg, #4facfe, #00f2fe);
+font-family: “Segoe UI”, sans-serif;
+min-height: 100vh;
+color: #fff;
+}
+
+.border {
+border-radius: 1rem;
+box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+background: rgba(255,255,255,0.95);
+color: #333;
+margin-bottom: 1rem;
+animation: fadeInUp 0.8s ease-in-out;
+}
+
+.btn-info, .btn-primary, .btn-secondary {
+border-radius: 2rem;
+font-weight: 500;
+transition: all 0.3s ease;
+}
+
+.btn-info:hover, .btn-primary:hover, .btn-secondary:hover {
+transform: scale(1.05);
+}
+
+table.table {
+margin: 0;
+transition: all 0.3s ease;
+opacity: 0;
+transform: translateY(10px);
+animation: tableFadeIn 0.5s forwards;
+}
+
+#councilNewsBar {
+background: rgba(255,255,255,0.95);
+border-radius: 1rem;
+box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+color: #333;
+padding: 1rem;
+animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+from { opacity: 0; transform: translateY(20px); }
+to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes tableFadeIn {
+to { opacity: 1; transform: translateY(0); }
+}

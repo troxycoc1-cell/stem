@@ -1,0 +1,44 @@
+body {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  min-height: 100vh;
+  color: #fff;
+  font-family: "Segoe UI", sans-serif;
+}
+
+h2, h4 {
+  font-weight: 600;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.card {
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  background: rgba(255, 255, 255, 0.95);
+  color: #333;
+  margin-bottom: 1.5rem;
+  animation: fadeInUp 0.8s ease-in-out;
+}
+
+.btn-back {
+  background-color: #ff7eb3;
+  border: none;
+  transition: all 0.3s ease;
+  border-radius: 2rem;
+  padding: 0.6rem 1.5rem;
+  font-weight: 500;
+}
+
+.btn-back:hover {
+  background-color: #ff4e94;
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
